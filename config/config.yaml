@@ -15,8 +15,28 @@ config:
 modes:
   - attract
   - base
+  - bumpers
+  - hurryup
 
 playfields:
   playfield:
     default_source_device: bd_trough
     tags: default 
+
+virtual_platform_start_active_switches:
+  - s_trough_1
+  - s_trough_2
+  - s_trough_3
+
+machine_vars:
+  score6_label:
+    value_type: str
+    initial_value: "5th"
+  score6_name:
+    value_type: str
+    initial_value: "OLH"
+  score6_value:
+    value_type: int
+    initial_value: 100_000_000
+
+
